@@ -95,7 +95,10 @@ const App = () => {
     <div className="chat-bg">
       <canvas ref={canvasRef} className="matrix-bg"></canvas>
       <div className="chat-container">
-        <h2 className="chat-title">NeoChat</h2>
+        <h2 className="chat-title" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
+          <img src="/NeoChat.png" alt="NeoChat Logo" style={{ height: 48 }} />
+          NeoChat
+        </h2>
         {!registered ? (
           <>
             <UsernameForm onSetUsername={handleSetUsername} />
@@ -104,7 +107,7 @@ const App = () => {
         ) : (
           <>
             <div style={{ color: '#00ff41', marginBottom: 8, fontSize: '1rem', textAlign: 'center' }}>
-              Welcome, <span style={{ fontWeight: 'bold' }}>{username}</span>
+              Welcome to <img src="/NeoChat.png" alt="NeoChat Logo" style={{ height: 24, verticalAlign: 'middle', marginRight: 4 }} /> NeoChat <span style={{ fontWeight: 'bold' }}>{username}</span>
             </div>
             <div className="chat-messages">
               {messages.length === 0 ? (
