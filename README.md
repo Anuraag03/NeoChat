@@ -1,6 +1,6 @@
 # NeoChat
 
-![NeoChat Logo](/image.png)
+![NeoChat Logo](client/public/image.png)
 # NeoChat
 
 NeoChat is a real-time chat application with a Matrix-style animated background, built using React and Socket.io.
