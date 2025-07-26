@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { io } from "socket.io-client";
 import UsernameForm from "./UsernameForm";
-const socket = io("http://localhost:3000");
+const socket = io(import.meta.env.VITE_REACT_APP_BACKEND_BASEURL);
 
 
 const App = () => {
